@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Widgets from './Widgets';
 
 const App = () => {
   return (
     <main>
-      <section id="header">
-        nick, exposed
-      </section>
+      <section id="header">nick, exposed</section>
+      <Widgets />
     </main>
   );
 };
