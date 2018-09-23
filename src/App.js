@@ -4,7 +4,14 @@ import Widgets from './Widgets';
 
 const Main = styled.main`
   line-height: 1.5;
-  padding: 1.25rem 2rem;
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 2rem 1.25rem;
+
+  @media (min-width: 768px) {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
 `;
 
 const Section = styled.section`
@@ -15,8 +22,11 @@ const App = () => {
   return (
     <Main>
       <Section id="header">
-        👋 Welcome to my dashboard. It's not much right now. Check out what I
-        have exposed so far:
+        <span role="img" aria-label="hand-waving">
+          👋
+        </span>{' '}
+        Welcome to my dashboard. It's not much right now. Check out what I have
+        exposed so far:
       </Section>
       <Section id="widgets">
         <Widgets />

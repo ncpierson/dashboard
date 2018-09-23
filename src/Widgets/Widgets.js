@@ -8,13 +8,13 @@ const StyledList = styled.ul`
   padding: 0;
 `;
 
-const Blog = <Widget icon="📝" slug="blog" />;
-const Budget = <Widget icon="💰" slug="budget" />;
-const Goals = <Widget icon="🥇" slug="goals" />;
-const Portfolio = <Widget icon="📁" slug="portfolio" />;
-const Resume = <Widget icon="📜" slug="resume" />;
-const Schedule = <Widget icon="🕰️" slug="schedule" />;
-const Todo = <Widget icon="☑️" slug="todo" />;
+const Blog = <Widget icon="📝" slug="blog" key="blog" />;
+const Budget = <Widget icon="💰" slug="budget" key="budget" />;
+const Goals = <Widget icon="🥇" slug="goals" key="goals" />;
+const Portfolio = <Widget icon="📁" slug="portfolio" key="portfolio" />;
+const Resume = <Widget icon="📜" slug="resume" key="resume" />;
+const Schedule = <Widget icon="🕰️" slug="schedule" key="schedule" />;
+const Todo = <Widget icon="☑️" slug="todo" key="todo" />;
 
 const Widgets = () => {
   return (

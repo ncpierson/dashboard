@@ -15,7 +15,7 @@ const Widget = props => {
 
   return (
     <StyledWidget>
-      {props.icon} <a href={url}>{shortlink}</a>
+      <span role="img">{props.icon}</span> <a href={url}>{shortlink}</a>
     </StyledWidget>
   );
 };
