@@ -1,25 +1,26 @@
 import React from 'react';
+import styled from 'styled-components';
 import Widget from './Widget';
 
-const Blog = (
-  <Widget icon="notes" name="Blog" url="https://blog.nick.exposed" />
-);
+const StyledList = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 0;
+`;
 
-const Budget = (
-  <Widget icon="border-all" name="Budget" url="http://budget.nick.exposed" />
-);
-
-const Goals = (
-  <Widget icon="list" name="Goals" url="http://goals.nick.exposed" />
-);
+const Blog = <Widget icon="📝" slug="blog" />;
+const Budget = <Widget icon="💰" slug="budget" />;
+const Goals = <Widget icon="🥇" slug="goals" />;
+const Portfolio = <Widget icon="📁" slug="portfolio" />;
+const Resume = <Widget icon="📜" slug="resume" />;
+const Schedule = <Widget icon="🕰️" slug="schedule" />;
+const Todo = <Widget icon="☑️" slug="todo" />;
 
 const Widgets = () => {
   return (
-    <section id="widgets">
-      {Blog}
-      {Budget}
-      {Goals}
-    </section>
+    <StyledList>
+      {[Blog, Budget, Goals, Portfolio, Resume, Schedule, Todo]}
+    </StyledList>
   );
 };
 
