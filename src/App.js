@@ -33,7 +33,7 @@ const App = () => {
       </Section>
       <Section id="footer">
         Want to reach me? Find me on twitter{' '}
-        <a href="https://twitter.com/NickOnTheWeb">@NickOnTheWeb</a>.
+        <a href="https://twitter.com/NickOnTheWeb">@NickOnTheWeb</a>
       </Section>
     </Main>
   );
