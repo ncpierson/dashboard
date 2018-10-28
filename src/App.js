@@ -18,15 +18,25 @@ const Section = styled.section`
   margin-top: 1rem;
 `;
 
+const Title = styled.h1`
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 0;
+  padding: 0;
+`;
+
 const App = () => {
   return (
     <Main>
       <Section id="header">
-        <span role="img" aria-label="hand-waving">
-          👋
-        </span>{' '}
-        Welcome to my dashboard. It's not much right now. Check out what I have
-        exposed so far:
+        <Title>
+          <span role="img" aria-label="hand-waving">
+            👋
+          </span>{' '}
+          Welcome to the dashboard for Nick Pierson.
+        </Title>
+        It's not much right now, but you can check out what I have exposed so
+        far:
       </Section>
       <Section id="widgets">
         <Widgets />
