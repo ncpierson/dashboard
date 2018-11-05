@@ -5,7 +5,6 @@
   "scripts": {
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "precommit": "prettier -l \"**/*.js\"",
     "prettier": "prettier --write \"**/*.js\"",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom"
@@ -19,5 +18,10 @@
   "devDependencies": {
     "husky": "^1.0.0-rc.15",
     "prettier": "^1.14.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "prettier -l \"**/*.js\""
+    }
   }
 }
