@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "build": "react-scripts build",
+    "deploy": "./scripts/deploy.sh",
     "eject": "react-scripts eject",
+    "postversion": "./scripts/postversion.sh",
     "prettier": "prettier --write \"**/*.js\"",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom"
