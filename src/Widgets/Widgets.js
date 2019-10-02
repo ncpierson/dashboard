@@ -9,16 +9,13 @@ const StyledList = styled.ul`
 `;
 
 const Blog = <Widget icon="📝" slug="blog" key="blog" />;
+const Books = <Widget icon="📚" slug="books" key="books" />;
 const Budget = <Widget icon="💰" slug="budget" key="budget" />;
-const Goals = <Widget icon="🥇" slug="goals" key="goals" />;
-const Portfolio = <Widget icon="📁" slug="portfolio" key="portfolio" />;
 const Resume = <Widget icon="📜" slug="resume" key="resume" />;
 const Todo = <Widget icon="☑️" slug="todo" key="todo" />;
 
 const Widgets = () => {
-  return (
-    <StyledList>{[Blog, Budget, Goals, Portfolio, Resume, Todo]}</StyledList>
-  );
+  return <StyledList>{[Blog, Books, Budget, Resume, Todo]}</StyledList>;
 };
 
 export default Widgets;

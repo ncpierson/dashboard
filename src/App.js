@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Projects from './Projects';
 import Widgets from './Widgets';
 
 const Main = styled.main`
@@ -40,6 +41,10 @@ const App = () => {
       </Section>
       <Section id="widgets">
         <Widgets />
+      </Section>
+      <Section id="projects-header">I also run some side projects:</Section>
+      <Section id="projects">
+        <Projects />
       </Section>
       <Section id="footer">
         Want to reach me? Find me on twitter{' '}
