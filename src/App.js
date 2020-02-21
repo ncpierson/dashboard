@@ -29,6 +29,7 @@ const Title = styled.h1`
 const App = () => {
   return (
     <Main>
+      <HireMe />
       <Section id="header">
         <Title>
           <span role="img" aria-label="hand-waving">
@@ -36,6 +37,11 @@ const App = () => {
           </span>{' '}
           Welcome to the dashboard for Nick Pierson.
         </Title>
+      </Section>
+      <Section id="location">
+        <strong>Current location:</strong> Austin, TX
+      </Section>
+      <Section>
         It's not much right now, but you can check out what I have exposed so
         far:
       </Section>
@@ -51,6 +57,16 @@ const App = () => {
         <a href="https://twitter.com/NickOnTheWeb">@NickOnTheWeb</a>
       </Section>
     </Main>
+  );
+};
+
+const HireMe = () => {
+  return (
+    <Section id="hire-me">
+      <a href="https://twitter.com/NickOnTheWeb/status/1230952382676324352">
+        Hire me!
+      </a>
+    </Section>
   );
 };
 

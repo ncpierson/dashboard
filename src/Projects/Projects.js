@@ -8,9 +8,15 @@ const StyledList = styled.ul`
   padding: 0;
 `;
 
+const Hearling = (
+  <Project key="hearling" url="hearling.com">
+    text-to-speech for everyone (& my first business)
+  </Project>
+);
+
 const Fashionscape = (
   <Project key="fashionscape" url="scape.fashion">
-    find your runescape outfit
+    find your favorite runescape outfit
   </Project>
 );
 
@@ -21,7 +27,7 @@ const SoundOfText = (
 );
 
 const Projects = () => {
-  return <StyledList>{[Fashionscape, SoundOfText]}</StyledList>;
+  return <StyledList>{[Fashionscape, Hearling, SoundOfText]}</StyledList>;
 };
 
 export default Projects;
