@@ -29,7 +29,6 @@ const Title = styled.h1`
 const App = () => {
   return (
     <Main>
-      <HireMe />
       <Section id="header">
         <Title>
           <span role="img" aria-label="hand-waving">
@@ -57,16 +56,6 @@ const App = () => {
         <a href="https://twitter.com/NickOnTheWeb">@NickOnTheWeb</a>
       </Section>
     </Main>
-  );
-};
-
-const HireMe = () => {
-  return (
-    <Section id="hire-me">
-      <a href="https://twitter.com/NickOnTheWeb/status/1230952382676324352">
-        Hire me!
-      </a>
-    </Section>
   );
 };
 

@@ -13,14 +13,11 @@ const Books = <Widget icon="📚" slug="books" key="books" />;
 const Budget = <Widget icon="💰" slug="budget" key="budget" />;
 const Github = <Widget icon="👨‍💻" slug="github" key="github" />;
 const Resume = <Widget icon="📜" slug="resume" key="resume" />;
-const Todo = <Widget icon="☑️" slug="todo" key="todo" />;
 const YouTube = <Widget icon="🎬" slug="youtube" key="youtube" />;
 
 const Widgets = () => {
   return (
-    <StyledList>
-      {[Blog, Books, Budget, Github, Resume, Todo, YouTube]}
-    </StyledList>
+    <StyledList>{[Blog, Books, Budget, Github, Resume, YouTube]}</StyledList>
   );
 };
 
